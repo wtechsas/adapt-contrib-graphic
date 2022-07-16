@@ -1,0 +1,21 @@
+{
+  "name": "adapt-contrib-graphic",
+  "version": "10.0.0",
+  "framework": ">=5.19.1",
+  "homepage": "https://github.com/wtechsas/adapt-contrib-graphic",
+  "bugs": "https://github.com/wtechsas/adapt-contrib-graphic/issues",
+  "component" : "graphic",
+  "targetAttribute": "_graphic",
+  "displayName" : "Gráfico",
+  "description": "Componente gráfico que muestra dinámicamente imágenes pequeñas y grandes de diferentes resoluciones según el ancho del dispositivo.",
+  "main": "/js/adapt-contrib-graphic.js",
+  "assetFields" : [
+    "_graphic.small",
+    "_graphic.large"
+  ],
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

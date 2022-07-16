@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Sección gráfica de imagenes",
+      "title": "Etiqueta Aria",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Texto de instrucciones",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Este es el texto de instrucciones.",
+      "translatable": true
+    },
+    "_graphic": {
+      "type": "object",
+      "required": true,
+      "title": "Imagen",
+      "properties": {
+        "alt": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Texto alternativo",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Una descripción de la imagen; requerido cuando tiene un significado que debe transmitirse al alumno. Para imágenes 'decorativas', déjelo en blanco.",
+          "translatable": true
+        },
+        "large": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Grande",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "La imagen de gran tamaño para dispositivos de escritorio."
+        },
+        "small": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Pequeña",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "La imagen de tamaño pequeño para dispositivos móviles."
+        },
+        "attribution": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Descripción de la imagen",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Texto que se mostrará superpuesto en la parte inferior de la imagen",
+          "translatable": true
+        },
+        "_url": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Link en la imagen",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Cuando se selecciona el gráfico, esta es la URL que seguirá."
+        },
+        "_target": {
+          "type": "string",
+          "required": false,
+          "enum": ["_blank", "_self", "_parent", "_top"],
+          "default": "",
+          "title": "Comportamiento del link",
+          "inputType": {
+            "type": "Select",
+            "options": [
+              {"val": "_blank", "label": "abrir nueva pestaña"},
+              {"val": "_self", "label": "abrir en el contedor del enlace"},
+              {"val": "_parent", "label": "abrir en contenedor principal de contenido"},
+              {"val": "_top", "label": "abrir en la misma página del enlace"}
+            ]
+          },
+          "validators": [],
+          "help": "Esto apunta a dónde abrir el enlace. Los valores aceptables son 'abrir nueva pestaña' (abre el documento vinculado en una nueva ventana o pestaña), 'abrir en contenedor principal de contenido' (abre el documento vinculado en el marco principal), 'abrir en la misma página del enlace' (abre el documento vinculado en el cuerpo completo de la ventana) o 'abrir en el contedor del enlace' (abre el documento vinculado en el mismo marco en el que se seleccionó. Si no se establece ningún valor, el valor predeterminado es 'abrir nueva pestaña'."
+        }
+      }
+    }
+  }
+}

@@ -6,8 +6,8 @@
   "bugs": "https://github.com/wtechsas/adapt-contrib-graphic/issues",
   "component" : "graphic",
   "targetAttribute": "_graphic",
-  "displayName" : "Gráfico",
-  "description": "Componente gráfico que muestra dinámicamente imágenes pequeñas y grandes de diferentes resoluciones según el ancho del dispositivo.",
+  "displayName" : "Imagen",
+  "description": "Muestra dinámicamente imágenes pequeñas y grandes de diferentes resoluciones según el ancho del dispositivo.",
   "main": "/js/adapt-contrib-graphic.js",
   "assetFields" : [
     "_graphic.small",

@@ -44,7 +44,7 @@
           "title": "Texto alternativo",
           "inputType": "Text",
           "validators": [],
-          "help": "Una descripción de la imagen; requerido cuando tiene un significado que debe transmitirse al alumno. Para imágenes 'decorativas', déjelo en blanco.",
+          "help": "Una descripción de la imagen; requerido cuando tiene un significado que debe transmitirse al estudiante. Para imágenes 'decorativas', déjelo en blanco.",
           "translatable": true
         },
         "large": {

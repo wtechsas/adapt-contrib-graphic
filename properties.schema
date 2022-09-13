@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Sección gráfica de imagenes",
+      "default": "Sección gráfica de imágenes",
       "title": "Etiqueta Aria",
       "inputType": "Text",
       "validators": [],

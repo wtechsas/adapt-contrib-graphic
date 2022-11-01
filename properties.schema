@@ -51,19 +51,19 @@
           "type": "string",
           "required": true,
           "default": "",
-          "title": "Grande",
+          "title": "Grande (Formatos: jpg | png | gif)",
           "inputType": "Asset:image",
           "validators": ["required"],
-          "help": "La imagen de gran tamaño para dispositivos de escritorio."
+          "help": "Imagen de gran tamaño para dispositivos de escritorio. (Formatos: jpg | png | gif)"
         },
         "small": {
           "type": "string",
           "required": true,
           "default": "",
-          "title": "Pequeña",
+          "title": "Pequeña (Formatos: jpg | png | gif)",
           "inputType": "Asset:image",
           "validators": ["required"],
-          "help": "La imagen de tamaño pequeño para dispositivos móviles."
+          "help": "Imagen de tamaño pequeño para dispositivos móviles. (Formatos: jpg | png | gif)"
         },
         "attribution": {
           "type": "string",
